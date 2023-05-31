@@ -1,0 +1,55 @@
+@import "styles/mixines.scss";
+
+.search {
+  width: 24%;
+  @include flex(center, space-between);
+  border: 1px solid var(--grey-500);
+  border-radius: 10px;
+  .input {
+    width: 100%;
+    height: 48px;
+    background: var(--white);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: var(--grey-800);
+    font-size: 18px;
+    padding: 0 16px;
+    &::placeholder {
+      color: var(--grey-500);
+    }
+  }
+  &_icon_container {
+    @include flex();
+    width: 60px;
+    height: 48px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: var(--accent-blue);
+    cursor: pointer;
+    .icon {
+      width: 20px;
+      height: 20px;
+      fill: var(--white);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .search {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .search {
+    margin-bottom: 10px;
+    .input {
+      height: 46px;
+      font-size: 16px;
+    }
+    &_icon_container {
+      height: 46px;
+    }
+  }
+}

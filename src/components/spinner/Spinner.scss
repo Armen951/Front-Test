@@ -1,0 +1,17 @@
+@import "styles/mixines.scss";
+
+.spinner_container {
+    @include flex();
+    width: 100%;
+    .spinner {
+        margin-top: 4px;
+        width: 26px;
+        height: 26px;
+        color: var(--white);
+        animation: spin 1s linear infinite;
+    }
+
+    .spinner_accent {
+        color: var(--accent-blue);
+    }
+}

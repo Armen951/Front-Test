@@ -1,0 +1,19 @@
+@import "styles/mixines";
+
+.header {
+  @include flex(center,space-between);
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--grey-500);
+  &_link {
+    font-size: 16px;
+    color: var(--black);
+    margin-right: 16px;
+    font-weight: 600;
+  }
+  &_active_link {
+    color: var(--accent-blue);
+    font-weight: 600;
+  }
+}

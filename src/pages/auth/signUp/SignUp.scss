@@ -1,0 +1,27 @@
+@import "styles/mixines.scss";
+
+.signUp {
+  @include flex();
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  &_form {
+    width: 100%;
+    margin-top: 20px;
+    overflow-y: auto;
+    padding: 0 20px;
+    .button {
+      margin-top: 20px;
+    }
+    &_footer {
+      @include flex();
+      margin-top: 10px;
+      color: var(--black);
+      .link {
+        margin-left: 4px;
+        font-weight: 600;
+        color: var(--accent-blue);
+      }
+    }
+  }
+}
