@@ -1,8 +1,8 @@
 import { getAccessToken } from 'services/token';
 import axios from 'axios';
-const baseUrl = 'http://localhost:8000/api/';
+
 const instance = axios.create({
-	baseURL: baseUrl,
+	baseURL: process.env.REACT_APP_BASE_URL,
 	headers: {
 		'Content-Type': 'application/json',
 	},
